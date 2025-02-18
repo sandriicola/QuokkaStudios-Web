@@ -1,0 +1,448 @@
+@font-face{
+    
+font-family: 'Special Elite';
+font-style: cursive;
+font-weight:200;
+}
+
+.contenedor {
+  width:100%;
+}
+
+
+.cabecera {
+  width: 100%;
+  height: 100px;
+  background-color:saddlebrown;
+  position: fixed; /* add this */
+  top: 0; /* add this */
+} 
+.QuokkaStudios a {
+  cursor: pointer;
+}
+
+.contenedor nav {
+  width: 95%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+nav {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+nav ul {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  list-style: none;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+width: 20%;
+float: left;
+text-align: center;
+padding: 37px 15px;
+cursor: pointer;
+color: #eee;
+font-size: 25px;
+text-transform: uppercase;
+transition: all 0.5s ease;
+font-family: 'Special Elite';
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+nav ul li a {
+text-decoration: none;
+color: white;
+}
+
+
+nav ul li a:hover {
+color: dimgray;
+}
+
+/* sub-menu */
+
+nav ul li ul.sub-nav {
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+height: 100px;
+background: #f4a460;
+visibility: hidden;
+opacity: 0;
+display: block;
+padding-inline-start: 0px;
+}
+
+nav ul li ul.sub-nav li {
+color: #eee;
+font-size: 20px;
+width: 90%;
+padding: 15px;
+text-align: center;
+position: static;
+}
+
+nav ul li ul.sub-nav li:hover {
+color: dimgray;
+}
+
+nav ul li:hover ul.sub-nav {
+visibility: visible;
+opacity: 1;
+}
+
+nav ul li ul.sub-nav li:hover {
+background-color: #d2691e;
+border-radius: 10px;
+}
+
+
+
+/*cajas*/
+
+.section {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.section1 {
+  background-image: url(../IMG/fondo%20fatherhood%201.jpg);
+    
+}
+.box.box-left {
+  font-size: 25px; 
+}
+.box.box-right {
+  font-size: 28px; 
+    padding-top: none;
+}
+
+
+
+.section2 {
+  background-image: url('../IMG/fondo%20fatherhood%202.jpg');
+
+    
+}
+
+.section3 {
+  background-image: url('../IMG/fondo%20fatherhood%203.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+/* section2*/
+.caja-texto1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 25px;
+  position: absolute;
+  top: 170%;
+  right: 0;
+  transform: translate(0%,-70%);
+  width: 625px;
+  height: 600px;
+}
+
+.caja-texto1 p {
+  margin-bottom: 0;
+    font-size: 50px;
+}
+.caja-texto2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 25px;
+  position: absolute;
+  top: 179%;
+  left: 0;
+  transform: translate(-0%, -79%);
+  width: 625px;
+  height: 600px;
+}
+.caja-texto2 h2{
+    font-size: 40px;
+}
+.caja-texto2 p {
+  margin-bottom: 0;
+font-size: 30px;
+}
+
+
+/* seccion 3*/
+.titulo {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 1270%);
+  text-align: center;
+  color: black;
+  z-index: 0;
+}
+.titulo h1 {
+  font-size: 40px;
+}
+.slider {
+  position: relative;
+  width: 25%;
+  height: 555px; /* ajusta la altura según tus necesidades */
+  overflow: hidden;
+    
+}
+
+.slides {
+  display: flex;
+  width: 100%; /* Ancho total de todas las imágenes */
+  height: 100%; /* Altura del contenedor */
+  transition: transform 0.3s ease-in-out;
+}
+
+.slides img {
+  width: 100%; /* Ancho automático de cada imagen */
+  height: 100%; /* Altura específica de las imágenes */
+  object-fit: contain; /* Ajusta la imagen manteniendo su relación de aspecto */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+.slide-caption {
+  position: absolute;
+  bottom:50px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 0px;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  transform: translateY(80%);
+  transition: transform 0.3s ease-in-out;
+}
+.slide-caption h2 {
+  font-size: 20px;
+} 
+.slide-text {
+  position: absolute;
+  bottom:30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  z-index: 1;
+}
+.slide-caption2 {
+  position: absolute;
+  bottom:50px;
+  left: 340px;
+  width: 100%;
+  height: 100px;
+  padding: 0px;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  transform: translateY(80%);
+  transition: transform 0.3s ease-in-out;
+}
+.slide-caption2 h2 {
+  font-size: 20px;
+} 
+.slide-text1 {
+  position: absolute;
+  bottom:30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  z-index: 1;
+}
+.slide-caption3 {
+ position: absolute;
+  bottom:50px;
+  left: 675px;
+  width: 100%;
+  height: 100px;
+  padding: 0px;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  transform: translateY(80%);
+  transition: transform 0.3s ease-in-out;
+}
+.slide-caption3 h2 {
+  font-size: 20px;
+} 
+.slide-text2 {
+  position: absolute;
+  bottom:30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  z-index: 1;
+}
+.slide-caption4 {
+  position: absolute;
+  bottom:50px;
+  left: 1010px;
+  width: 100%;
+  height: 100px;
+  padding: 0px;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  transform: translateY(80%);
+  transition: transform 0.3s ease-in-out;
+}
+.slide-caption4 h2 {
+  font-size: 20px;
+} 
+.slide-text3 {
+  position: absolute;
+  bottom:30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  z-index: 1;
+} 
+.slide-caption5 {
+  position: absolute;
+  bottom:50px;
+  left: 1345px;
+  width: 100%;
+  height: 100px;
+  padding: 0px;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  transform: translateY(80%);
+  transition: transform 0.3s ease-in-out;
+}
+.slide-caption5 h2 {
+  font-size: 20px;
+} 
+.slide-text4 {
+  position: absolute;
+  bottom:30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  z-index: 1;
+} 
+.slide-caption6 {
+  position: absolute;
+  bottom:50px;
+  left: 1690px;
+  width: 100%;
+  height: 100px;
+  padding: 0px;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  transform: translateY(80%);
+  transition: transform 0.3s ease-in-out;
+}
+.slide-caption6 h2 {
+  font-size: 20px;
+} 
+.slide-text5 {
+  position: absolute;
+  bottom:30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  z-index: 1;
+} 
+
+.slide-caption.active {
+  transform: translateY(50%);
+}
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.next {
+  right: 0px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.arrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.9);
+}
+
+.prev::before {
+  border-width: 10px 20px 10px 0;
+  border-color: transparent rgba(255, 255, 255, 0.9) transparent transparent;
+}
+
+.slider .arrow:active,
+.slider .arrow:focus {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+

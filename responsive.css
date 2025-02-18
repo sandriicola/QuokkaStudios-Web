@@ -1,0 +1,158 @@
+body {
+  font-family: 'Special Elite';
+  background-color: burlywood;
+  height: 100%;
+  width: 100%;
+  margin:0;
+  padding:0;
+}
+
+.contenedor{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+@media screen and (max-width : 792px) {
+	
+	.contenedor nav {
+		width: 100%;
+		margin-top: 100px;
+	}
+	
+	.cabecera{
+		text-align:center;
+	}
+	
+	nav{
+		background-color: saddlebrown !important;
+	}
+	
+	nav ul li{
+		width: auto;
+	}
+	
+	nav ul{
+		justify-content:left;
+		padding:0;
+	}
+	
+	.imagen-diagonal img {
+		width: 300px;
+		height: 300px;
+	}
+	
+	#imagen1{
+		transform: translate(5%, 85%);
+	}
+	
+	#imagen2{
+		transform: translate(10%, 90%);
+	}
+	
+	#imagen3{
+		transform: translate(15%, 95%);
+	}
+	
+	.box-left, .box-right{
+		display: block;
+		font-size: 22px !important;
+		width: 84%;
+	}
+	
+	.box-right{
+	    transform: translate(-3%, -53%) !important;
+	}
+	
+	.box-left{
+	    transform: translate(3%, 129%) !important;
+	}
+	
+	nav ul li ul.sub-nav li{
+		font-size: 18px !important;
+		padding-left: 6px;
+	}
+	
+	.titulo {
+		transform: translateX(15%);
+		top:300px;
+}
+	
+	.imagen {
+		transform: translate(140%, -95%);
+		width: 100px;
+		height: 100px;
+		z-index: -9999;
+	}
+	
+	.texto {
+		transform: translate(0%,15%);
+		width: 350px;
+		height: 410px;
+		font-size: 18px;
+	}
+	
+	.caja.texto{
+		background-color: #696969e3;
+	}
+	
+	.fila1{
+		margin-top: 270px;
+	}
+	
+	.cuadrado{
+		width: 150px;
+		margin-right: 20px;
+		margin-left: 10px;
+	}
+	
+	.contenedor-seccion{
+		margin-top: 200px;
+	}
+	
+	.caja-de-texto{
+		margin-left: 0;
+	}
+	
+	.caja-de-texto h2, .caja-de-texto p, .caja-de-texto a{
+		font-size:24px;
+	}
+	
+	.mapa{
+		margin-bottom:-285px;
+		right: 0;
+	}
+	
+	.titulo.fatherhood{
+		transform: translateX(-50%);
+		top: 1470px;
+	}
+	
+	.caja-texto2, .caja-texto1{
+		top: 115%;
+		width: 84%;
+		left:6px;
+		height: auto;
+	}
+	
+	.caja-texto1{
+		top:150%;
+	}
+	
+	.caja-texto2 p, .caja-texto2 h2,.caja-texto1 p, .caja-texto1 h2{
+		font-size: 22px !important
+	}
+	
+	.section.section2{
+		height: 75vh;
+	}
+	
+	.section.section3{
+		align-items: normal;
+	}
+	
+	.slider {
+		width: 85%;
+		top: 62px;
+	}
+}
