@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <meta charset="utf-8">
+        <title>QuokkaStudios</title>
+        <link rel="icon" href="IMG/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 ">
+        <link rel="stylesheet" href="css/fatherhoodestilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        
+        <style>
+            
+            .contenedor{
+                position: static;
+            }
+            
+            .box {
+                background-color: black;
+                color: white;
+                padding: 20px;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 50%;
+                display: none;
+            }
+    
+            .box-left {
+                left: 1;
+                transform: translate(0%, 100%);
+                width: 500px;
+                height: 100px;
+            }
+    
+            .box-right {
+                right: 0;
+                transform: translate(0%, -50%);
+                width: 500px;
+                height: 300px;
+            }
+    
+            section.contenedor:hover .box {
+                display: block;
+            }
+            
+            body:hover .box {
+                display: block;
+            }
+        </style>
+		
+		<link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+  <div class="section section1"></div>
+  <div class="box box-left">
+
+                    <p>FECHA DE LANZAMIENTO: 02-06-2022</p>
+                </div>
+  
+                <div class="box box-right">
+                    
+                    <p>Fatherhood explora en un formato 2D la venta ilegal de bebés en la etapa franquismo-postfranquismo que se dió en España.
+En este nuevo innovador formato de juego documentativo descubrirás los secretos más oscuros de algunos miembros de la iglesia, gobierno y de uno de nuestros protagonistas. </p>
+                </div>
+  <div class="section section2"></div>
+  <div class="caja-texto1">
+               
+               <p>Tu mejor amiga de la infancia te pide ayuda para abrir una caja con candado que su padre le ha dejado como herencia. Lo que te llevará a hurgar en los recuerdos del pasado y a descubrir los sucios trapos del difunto.</p>
+  </div>
+  <div class="caja-texto2">
+               <h2> INFORMACIÓN DEL JUEGO</h2>
+               <p>Investiga y saca los secretos a la luz.
+El juego que explora una realidad vivida en España en la etapa de la dictadura y postdictadura.
+Solo para pc.</p>
+  </div>
+  <div class="section section3">
+     <div class="titulo fatherhood">
+    <h1>Galería de personajes</h1>
+  </div>
+      <div class="slider">
+  <div class="slides">
+   
+    <img src="IMG/Diseno_Padre.jpg" alt="">
+     <div class="slide-caption">
+         <div class="slide-text">
+          <h2>Antonio,padre de Maribel</h2>
+        </div>
+      </div>
+    <img src="IMG/Maribel,%20ni%C3%B1a.png" alt="">
+     <div class="slide-caption2 ">
+         <div class="slide-text1">
+          <h2>Maribel niña, hija de Antonio</h2>
+          </div> 
+      </div>
+    <img src="IMG/maribel,%20adulta.png" alt="">
+     <div class="slide-caption3">
+         <div class="slide-text2">
+          <h2>Maribel adulta, hija de Antonio</h2>
+        </div>
+         </div>
+    <img src="IMG/prota,ni%C3%B1o.png" alt="">
+     <div class="slide-caption4">
+         <div class="slide-text3">
+          <h2>Protagonista niño, amigo de Maribel</h2>
+        </div>
+         </div>
+    <img src="IMG/prota%20grande.png" alt="">
+     <div class="slide-caption5">
+         <div class="slide-text4">
+          <h2>Protagonista adulto, amigo de Maribel</h2>
+        </div>
+         </div>
+    <img src="IMG/cura.png"S alt="">
+     <div class="slide-caption6">
+         <div class="slide-text5">
+          <h2>Padre José, jefe de Antonio</h2>
+        </div>
+         </div>
+  </div>
+  <div class="arrows">
+      <div class="arrow prev"></div>
+  <div class="arrow next"></div>
+</div>
+  </div>
+</div>
+
+</div>
+<script>
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+const slides = document.querySelector('.slides');
+const captions = document.querySelectorAll('.slide-caption');
+
+let counter = 1;
+const size = slides.clientWidth;
+
+next.addEventListener('click', () => {
+  if (counter >= slides.children.length - 1) return;
+  counter++;
+  slides.style.transform = `translateX(-${counter * size}px)`;
+  captions.forEach(caption => caption.classList.remove('active'));
+  captions[counter - 1].classList.add('active');
+});
+
+prev.addEventListener('click', () => {
+  if (counter <= 0) return;
+  counter--;
+  slides.style.transform = `translateX(-${counter * size}px)`;
+  captions.forEach(caption => caption.classList.remove('active'));
+  captions[counter - 1].classList.add('active');
+});
+
+
+</script>
+<section class="contenedor">
+<section class="cabecera">
+  <article class="QuokkaStudios">
+    <a href="quokkastudios.html">
+      <img src="IMG/favicon.png" alt="Logo">
+    </a>
+  </article>
+</section>
+
+                <nav>
+                    <ul>
+                        <li>Juegos
+                            <ul class="sub-nav">
+                               <li><a href="Fatherhood.html">Fatherhood</a></li>
+
+                                </a>
+                            </ul>
+                        </li>
+                        <li>Acerca de
+                            <ul class="sub-nav">
+                                <li><a href="Sobre-Nosotras.html">Sobre nosotras</a></li>
+                                <li><a href="Miembros.html">Miembros</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Unete.html">Únete</a></li>
+                    </ul>
+                </nav>
+
+                
+           </body>
+            </section>
+			</section>
+           
+
