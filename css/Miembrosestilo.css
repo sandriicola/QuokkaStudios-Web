@@ -1,5 +1,5 @@
 @font-face{
-    
+src: url(); 
 font-family: 'Special Elite';
 font-style: cursive;
 font-weight:200;
@@ -9,7 +9,7 @@ body {
   font-family: 'Special Elite';
   font-weight: 500px;
   padding: 0px;
- background-color: burlywood;
+background-color: burlywood;
 
 }
 
@@ -32,7 +32,6 @@ body {
 .contenedor nav {
   width: 95%;
   height: 100px;
-  background: #8B45139;
   position: absolute;
   top: 0;
   left: 0;
